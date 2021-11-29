@@ -109,8 +109,8 @@ app.get('/deals/Recommended', (req, res) => {
 })
 
 
-app.get('/deals/:itemName', async (req, res) => {
-    var itemName = req.params.itemName;
+app.get('/deals/:ItemName', async (req, res) => {
+    var itemName = req.params.ItemName;
     res.json(deals.filter(x => x.title.toLowerCase().includes(itemName.toLowerCase())));
 })
 
